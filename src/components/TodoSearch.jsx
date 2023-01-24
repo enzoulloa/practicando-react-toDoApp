@@ -1,7 +1,7 @@
 
 function TodoSearch () {
   return (
-    <input placeholder='Cebolla' />
+    <input className=' text-primary m-5' placeholder='ToDo' />
   )
 }
 export default TodoSearch
