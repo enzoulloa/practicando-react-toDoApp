@@ -13,7 +13,7 @@ const todos = [
 
 function App () {
   return (
-    <>
+    <main className=' flex flex-col justify-center py-5 px-10  bg-quaternary rounded-3xl ring-orange-600 ring-2 ring-inset items-center mx-32 my-11'>
       <TodoCounter />
       <TodoSearch />
 
@@ -24,7 +24,8 @@ function App () {
       </TodoList>
 
       <CreateTodoButtom />
-    </>
+    </main>
+
   )
 }
 
