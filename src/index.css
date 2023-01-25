@@ -7,9 +7,5 @@
     background-color: #222831;
     color: #eeeeee;
     font-family: Inter, Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
   }
 }
