@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 function useLocalStorage (itemName, initialValue) {
-  const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [item, setItem] = useState(initialValue)
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function useLocalStorage (itemName, initialValue) {
         setItem(parsedItem)
         setLoading(false)
       } catch (err) {
-        setError(error)
+        setError(err)
       } finally {
         setLoading(false)
       }
@@ -31,8 +31,8 @@ function useLocalStorage (itemName, initialValue) {
       const stringifiedItem = JSON.stringify(newItem)
       window.localStorage.setItem(itemName, stringifiedItem)
       setItem(newItem)
-    } catch (error) {
-      setError(error)
+    } catch (err) {
+      setError(err)
     }
   }
   return {
