@@ -8,4 +8,8 @@
     color: #eeeeee;
     font-family: Inter, Arial, Helvetica, sans-serif;
   }
+  span {
+    font-size: 32px;
+    width: 100%;
+  }
 }
