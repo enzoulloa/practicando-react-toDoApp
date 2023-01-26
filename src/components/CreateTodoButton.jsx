@@ -1,9 +1,12 @@
 
-function CreateTodoButtom () {
-  return (
+function CreateTodoButtom (props) {
+  const onClickButton = () => {
+    props.setOpenModal(!props.openModal)
+  }
 
-    <button className=' bg-tertiary shadow-stone-900 shadow-md px-14 py-2 rounded-full my-5 cursor-pointer animation duration-300 hover:bg-secondary hover:text-tertiary '>
-      <span class='material-symbols-outlined'>
+  return (
+    <button onClick={onClickButton} className=' fixed right-10 bottom-10 px-4 py-4 bg-tertiary shadow-stone-900 shadow-md  rounded-full my-5 cursor-pointer animation duration-300 hover:bg-secondary hover:text-tertiary flex justify-center items-center'>
+      <span class='material-symbols-outlined text-6xl'>
         add
       </span>
     </button>
